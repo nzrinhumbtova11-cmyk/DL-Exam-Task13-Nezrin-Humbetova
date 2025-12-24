@@ -5,7 +5,7 @@
 **Seed:** [Your Assigned Seed]
 
 ## Presentation
-[View Presentation Slides]([https://drive.google.com/your-link-here](https://docs.google.com/presentation/d/1pdCCM7jT3JeaF3-0h98xG6cHjXcsgfHn/edit?usp=sharing&ouid=107458438931588601641&rtpof=true&sd=true  )
+[View Presentation Slides](https://docs.google.com/presentation/d/1pdCCM7jT3JeaF3-0h98xG6cHjXcsgfHn/edit?pli=1&slide=id.p1#slide=id.p1)
 
 ## Dataset
 - **Name:** [Dataset name]
