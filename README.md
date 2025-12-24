@@ -1,51 +1,79 @@
-# Task [X]: [Task Name]
+Task 13: Potato Disease Classification
 
-**Student:** [Your Name]  
-**ID:** [Student ID]  
-**Seed:** [Your Assigned Seed]
+Student: Hümbətova Nəzrin
+ID: S213
+Seed: 20240113
 
-## Presentation
+Presentation
+
 [View Presentation Slides](https://drive.google.com/your-link-here)
 
-## Dataset
-- **Name:** [Dataset name]
-- **Classes:** [Number]
-- **Training samples:** [Number]
-- **Test samples:** [Number]
 
-## Model Architecture
-- **Type:** [CNN/ResNet18/MobileNetV2]
-- **Convolutional layers:** [Number]
-- **Fully connected layers:** [Number]
-- **Total parameters:** [Number]
+Dataset
 
-## Training Comparison
+Name: PlantVillage (Potato Subset)
 
-### Version 1
-- **Learning rate:** [value]
-- **Batch size:** [value]
-- **Optimizer:** [name]
-- **Test accuracy:** [X.XX]%
+Classes: 3
 
-### Version 2
-- **Learning rate:** [value]
-- **Batch size:** [value]
-- **Optimizer:** [name]
-- **Test accuracy:** [X.XX]%
+Training samples: 1721
 
-### Best Result
-- **Best version:** Version [1/2]
-- **Final test accuracy:** [X.XX]%
-- **Target accuracy:** [X.XX]%
-- **Status:** ✓ Achieved / ✗ Below target
+Test samples: 431
 
-## Analysis
-- **Best performing class:** [class name]
-- **Worst performing class:** [class name]
-- **Key observations:** [2-3 sentences about what you learned]
+Model Architecture
 
-## Files
-- `notebook.ipynb`: Complete implementation with both training runs
-- `results/training_comparison.png`: Comparison of Version 1 vs Version 2
-- `results/confusion_matrix.png`: Confusion matrix from best model
-- `results/predictions.png`: Sample predictions
+Type: ResNet18 (Transfer Learning)
+
+Convolutional layers: 17
+
+Fully connected layers: 1
+
+Total parameters: ~11.7 Million
+
+Training Comparison
+Version 1
+
+Learning rate: 0.0001
+
+Batch size: 32
+
+Optimizer: Adam
+
+Test accuracy: 89.56%
+
+Version 2
+
+Learning rate: 0.0001
+
+Batch size: 64
+
+Optimizer: Adam
+
+Test accuracy: 84.69%
+
+Best Result
+
+Best version: Version 1
+
+Final test accuracy: 89.56%
+
+Target accuracy: 85.00%
+
+Status: ✓ Achieved
+
+Analysis
+
+Best performing class: Potato___Healthy
+
+Worst performing class: Potato___Early_blight
+
+Key observations: Version 1 (Batch Size 32) consistently outperformed Version 2 (Batch Size 64), reaching nearly 90% accuracy. The model successfully learned to classify the diseases despite the added Gaussian Blur and Color Jitter noise transformations.
+
+Files
+
+notebook.ipynb: Complete implementation with both training runs
+
+results/training_comparison.png: Comparison of Version 1 vs Version 2
+
+results/confusion_matrix.png: Confusion matrix from best model
+
+results/predictions.png: Sample predictions
